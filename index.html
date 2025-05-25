@@ -4,22 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navigation</title>
-    <link rel="stylesheet" href="style.css">
-  <style>
-    
-  </style>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
   </head>
-  <body style="background-color: aqua;">
-    
+  <body style="background-color: aqua">
+    <style>
+      /* Add a black background color to the top navigation */
+      .topnav {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Add a color to the active/current link */
+      .topnav a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      /* Right-aligned section inside the top navigation */
+      .topnav-right {
+        float: right;
+      }
+    </style>
+
     <!-- Navigation -->
     <nav>
-      <div class="container">
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#work">work</a></li>
-          <li><a href="#resume">resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#resume">resume</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
       </div>
     </nav>
     <iframe
@@ -29,11 +59,10 @@
     >
     </iframe>
     <audio controls autoplay muted>
-      <source src="horse.ogg" type="audio/ogg">
-      <source src="horse.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+      <source src="horse.ogg" type="audio/ogg" />
+      <source src="horse.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
     </audio>
-    
 
     <!-- About Section -->
     <section id="about" class="section">
@@ -50,34 +79,23 @@
     </section>
 
     <!-- work Section -->
-    <section id="resume" class="resume">
+    <section id="work" class="section">
       <div class="container">
         <h2>work</h2>
-        <p>
-          i am currently working for google
-        </p>
-          </div>
-          </div>
-        </div>
+        <p>i am currently working for google</p>
       </div>
     </section>
-
     <!-- resume Section -->
     <section id="resume" class="section">
       <div class="container">
         <h2>resume</h2>
-        <p>
-          dsdsd
-        </p>
-          </div>
-        </div>
+        <p>dsdsd</p>
       </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="section">
       <div class="container">
-        <h2>contact me </h2>
+        <h2>contact me</h2>
         <form>
           <input type="text" placeholder="Your Name" required />
           <input type="email" placeholder="Your Email" required />
@@ -90,8 +108,7 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-        </div>
+        <p>&copy;2025 My Portfolio. All rights reserved.</p>
       </div>
     </footer>
 
